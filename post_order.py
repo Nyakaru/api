@@ -21,11 +21,10 @@ orders = [
 
 
 
-
 @app.route('/orders', methods=['POST'])
 def add_order():
 	request_data = request.get_json()
 	response = Response("", 201, mimetype="application/json")
-	return response
+	return response 
 
 app.run(port=5000)		
