@@ -9,10 +9,10 @@ install:
   - pip install -r requirements.txt
   - pip install coveralls
 # command to run tests
-script:
-  - coverage run -m pytest
+
 after_success:
   - coveralls
-  - nosetests --with-coverage --cover-package=app
+
 after_script:
   - coveralls 
+
