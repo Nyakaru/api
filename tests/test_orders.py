@@ -1,7 +1,6 @@
 import unittest
 import json
-from app import create_app
-from app.resources.orders import Order, Orders
+
 ADD_ENTRY_URL = '/api/v1/orders/7'
 ADD_UPDATE_URL = '/api/v1/orders/8'
 GET_SINGLE_URL = '/api/v1/orders/1'
