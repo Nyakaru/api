@@ -1,6 +1,5 @@
 import unittest
 import json
-from tests import TestCase
 from app import create_app
 from app.resources.orders import Order, Orders
 ADD_ENTRY_URL = '/api/v1/orders/7'
