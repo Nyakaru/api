@@ -1,7 +1,8 @@
 language: python
 python:
-    - "3.6"
   - "3.6"
+  - "3.5"
+  
 # Command to install dependancies
 install: "make"
 install:
@@ -9,9 +10,9 @@ install:
   - pip install coveralls
 # command to run tests
 script:
-    - coverage run -m pytest
+  - coverage run -m pytest
 after_success:
-    - coveralls
+  - coveralls
   - nosetests --with-coverage --cover-package=app
 after_script:
   - coveralls 
