@@ -25,7 +25,7 @@ def get_orders():
 	return jsonify({'orders':orders})
 
 @app.route('/orders/<int:order_id>')
-def get_book_by_order_id(order_id):
+def get_order_by_order_id(order_id):
  	return_value = {}
  	for order in orders:
  		if order["order_id"] == order_id:
