@@ -1,0 +1,7 @@
+[
+  "test_order.py::TestOrders::test_delete_an_order", 
+  "test_order.py::TestOrders::test_get_all_orders", 
+  "test_order.py::TestOrders::test_get_specific_order", 
+  "test_order.py::TestOrders::test_place_an_order", 
+  "test_order.py::TestOrders::test_update_an_order"
+]
