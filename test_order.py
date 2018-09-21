@@ -9,8 +9,6 @@ from unittest import TestCase
 
 from flask_restful import Resource
 
-
-
 from app.apiv1.orders.views import SpecificOrder, Orders
 
 
