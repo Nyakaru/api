@@ -1,7 +1,7 @@
 language: python
 python:
-  - "3.6"
-  - "3.5"
+  - "3.6 dev"
+  
   
 # Command to install dependancies
 install: "make"
@@ -10,10 +10,14 @@ install:
   - pip install coveralls
 # command to run tests
 script:
-  - coverage run -m test_order.py
+  - pytest --cov=tests/
 after_success:
   - coveralls
 
 after_script:
   - coveralls 
+
+
+
+
 

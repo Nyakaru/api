@@ -15,7 +15,7 @@ class Orders(Resource):
     def get(self):
         """Return a list of all orders posted"""
         if len(orders) == 0:
-            return {'messsage': 'Nothing found'}, 200
+            return {'messsage': 'Empty orders list'}, 200
         return {'orders': orders}, 200
 
     def post(self):
@@ -39,8 +39,8 @@ class SpecificOrder(Resource):
         order = [order for order in orders if order['id'] == id]
         if order:
             return {'order': order[0]}, 200
-        if not order:
-            return {'message':'Error, order not found'}, 200
+        else:
+            return {'message':'Error,you order was not found'}, 200
     
     def put(self, id):
         order = [order for order in orders if order['id'] == id]
@@ -52,8 +52,8 @@ class SpecificOrder(Resource):
                
             # orders.append(order_data)
             return {'order': order[0]}, 200
-        if not order:
-            return {'message':'Error, order not found'}, 200
+        else:
+            return {'message':'Error ,Invalid oeder object'}, 200
     
     def delete(self, id):
         order = [order for order in orders if order['id'] == id]
@@ -61,5 +61,5 @@ class SpecificOrder(Resource):
             del orders[0]
             return {'orders': orders}, 204
         else:
-            return {'message': 'Could not find your order'}, 204
+            return {'message': 'Error ,Invalid oeder object'}, 204
 
