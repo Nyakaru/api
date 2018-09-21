@@ -1,7 +1,7 @@
 language: python
 
 python:
-  -"3.6" 
+  -"2.7" 
    
 # Command to install dependancies
 install:
@@ -10,7 +10,7 @@ install:
 
 # command to run tests
 script:
-  -pytest --cov=tests/
+  -pytest 
 
 after_success:
   -coveralls
