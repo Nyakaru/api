@@ -19,6 +19,3 @@ after_script:
   - coveralls 
 
 
-
-
-
