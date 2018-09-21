@@ -1,7 +1,0 @@
-[
-  "tests/test_order.py::TestApi::test_delete_order", 
-  "tests/test_order.py::TestApi::test_get_orders", 
-  "tests/test_order.py::TestApi::test_one_order", 
-  "tests/test_order.py::TestApi::test_post_orders", 
-  "tests/test_order.py::TestApi::test_put_order"
-]
